@@ -211,3 +211,17 @@ The results parsed by the critical function may be verified by other modules, su
 ---
 
 Please see the source code for more information.
+
+
+---------------
+###build yourself
+gcc rand.c rdx36.c crypt.c mcid.c slicx.c main.c -o keygen
+
+run for help:
+./keygen ?
+
+run:
+./keygen -c XXXXX-XXXXX -d 1 -t 12
+
+shell reeturn:
+XXXXX-XXXXX-XXXXX-XXXXX-XXXXX-XXXXX

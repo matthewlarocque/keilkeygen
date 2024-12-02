@@ -30,7 +30,7 @@ static void lic_rand(lic_t lic, uint32_t tick) {
 
 	int i;
 
-	random(tick);
+	random3(tick);
 
 	for (i = 0; i < 35; i++) {
 
@@ -54,7 +54,7 @@ static void lic_rand(lic_t lic, uint32_t tick) {
 	/* fill random values for lic */
 	for (i = 7; i < 11 ;i++) {
 		
-		val = random(0) % 36;
+		val = random3(0) % 36;
 		
 		lic[i] = rdx36tochar(val);
 	}

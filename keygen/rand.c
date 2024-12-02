@@ -5,7 +5,7 @@
 #include "rand.h"
 
 /**
- * @function random
+ * @function random3
  * 
  * Park and Miller's MINSTD generator
  *
@@ -14,7 +14,7 @@
  *
  * @return : random number;
  */
-uint32_t random(uint32_t seed) {
+uint32_t random3(uint32_t seed) {
 
 	static uint64_t next;
 

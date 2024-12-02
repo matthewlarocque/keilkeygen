@@ -14,7 +14,7 @@ extern "C" {
 /********************************************************************
  *  Miscellaneous Functions
  */
-uint32_t random(uint32_t seed);
+uint32_t random3(uint32_t seed);
 
 #ifdef __cplusplus
 }
