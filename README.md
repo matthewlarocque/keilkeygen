@@ -214,14 +214,49 @@ Please see the source code for more information.
 
 
 ---------------
-###build yourself
+## 4 Build and use in shell yourself:
+Build:
+```
 gcc rand.c rdx36.c crypt.c mcid.c slicx.c main.c -o keygen
+```
 
 run for help:
-./keygen ?
+```
+./keygen -h                             
+./keygen: illegal option -- h
+Options:
+
+cid: 11 byte Computer ID like XXXXX-XXXXX
+
+dev_id:
+ 1: C51, 2: C251, 3: C166, 4: ARM, 0: NA
+
+type_id:
+ 1: Cortex-M0/M0+,
+ 2: Cortex-M0/M0+ 128K,
+ 3: Cortex-M0/M0+ 256K,
+ 4: Macro Assembler Kit,
+ 5: Compiler/Assembler Kit,
+ 6: Developers Kit,
+ 7: Debugger,
+ 8: Hitex Extensions,
+ 9: Infineon Extensions,
+ 10: Essential/Standard Cortex-M only,
+ 12: Prof. Developers Kit/Plus,
+ 13: Limited (64K),
+ 14: Basic (256K)/Community,
+ 16: RL/Real-Time OS,
+ 17: Professional Cortex-M only(DS5),
+ 18: Professional,
+ 0: NA
+```
 
 run:
+```
 ./keygen -c XXXXX-XXXXX -d 1 -t 12
+```
 
-shell reeturn:
+shell will return the lic:
+```
 XXXXX-XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+```

@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
         switch (o) {
             case 'c':
 				cid2 = optarg;
-                printf("CID: %s\n", cid2);
+//                printf("CID: %s\n", cid2);
                 break;
             case 'd':
 				dev_id2 = optarg;
@@ -59,9 +59,9 @@ int main(int argc, char *argv[])
                 break;
             case '?':
 				printf("Options:\n");
-				printf("\ncid: 11 byte Computer ID like XXXXX-XXXXX\n");
-				printf("\ndev_id:\n 1: C51, 2: C251, 3: C166, 4: ARM, 0: NA\n");
-				printf("\ntype_id:\n 1: Cortex-M0/M0+,\n 2: Cortex-M0/M0+ 128K,\n 3: Cortex-M0/M0+ 256K,\n 4: Macro Assembler Kit,\n 5: Compiler/Assembler Kit,\n 6: Developers Kit,\n 7: Debugger,\n 8: Hitex Extensions,\n 9: Infineon Extensions,\n 10: Essential/Standard Cortex-M only,\n 12: Prof. Developers Kit/Plus,\n 13: Limited (64K),\n 14: Basic (256K)/Community,\n 16: RL/Real-Time OS,\n 17: Professional Cortex-M only(DS5),\n 18: Professional,\n 0: NA\n\n");
+				printf("\n-c (CID): 11 byte Computer ID like XXXXX-XXXXX\n");
+				printf("\n-d (dev_id):\n 1: C51, 2: C251, 3: C166, 4: ARM, 0: NA\n");
+				printf("\n-t (type_id):\n 1: Cortex-M0/M0+,\n 2: Cortex-M0/M0+ 128K,\n 3: Cortex-M0/M0+ 256K,\n 4: Macro Assembler Kit,\n 5: Compiler/Assembler Kit,\n 6: Developers Kit,\n 7: Debugger,\n 8: Hitex Extensions,\n 9: Infineon Extensions,\n 10: Essential/Standard Cortex-M only,\n 12: Prof. Developers Kit/Plus,\n 13: Limited (64K),\n 14: Basic (256K)/Community,\n 16: RL/Real-Time OS,\n 17: Professional Cortex-M only(DS5),\n 18: Professional,\n 0: NA\n\n");
                 return 0;
 				break;
         }
@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
 	switch (err) {
 	case 0: 
 //		printf(\n);		
-		printf("%s", lic);
+		printf("%s\n", lic);
 		break;
 	case -2:
 		printf(
